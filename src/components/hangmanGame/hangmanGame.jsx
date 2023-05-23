@@ -1,6 +1,8 @@
 import './hangmanGame.css'
-import { WORDS } from '../../words/words'
+import { WORDS } from '../../wordsArray/wordsArray.js'
 import { useState } from 'react'
+import Lives from '../lives/Lives'
+import Words from '../Word/Word'
 
 const HangmanGame = () => {
     const [word, setWord] = useState("")
@@ -10,11 +12,13 @@ const HangmanGame = () => {
     const wordGenerator = () => {
         setWord(WORDS[Math.floor(Math.random()*WORDS.length)])
     }
-    console.log(word)
+
+    useState(wordGenerator)
 
     return (
         <div>
-            <button onClick={wordGenerator}>Start</button>
+            <Words word={word}/>
+            <Lives/>
         </div>
     )
 }
