@@ -6,7 +6,7 @@ import Words from '../Word/Word'
 
 const HangmanGame = () => {
     const [word, setWord] = useState("")
-    const [badLetter, setBadLetter] = useState([])
+    const [guessedLetters, setGuessedLetters] = useState([])
     const [lives, setLives] = useState(6)
 
     const wordGenerator = () => {
@@ -17,8 +17,10 @@ const HangmanGame = () => {
 
     return (
         <div>
-            <Words word={word}/>
+            <Words word={word} guessedLetters={guessedLetters}/>
             <Lives/>
+            <input type="text"></input>
+            <button ></button>
         </div>
     )
 }
