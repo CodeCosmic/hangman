@@ -1,3 +1,5 @@
+import './Word.css'
+
 const Word = ({word, guessedLetters}) => {
     console.log(word)
     console.log(guessedLetters)

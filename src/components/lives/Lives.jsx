@@ -1,7 +1,10 @@
-const Lives = () => {
+import './Lives.css'
+
+const Lives = ({lives}) => {
     return (
-        <div>
-            Hello from lives component
+        <div className="container">
+            <span>Lives: </span>
+            <span className='lives'>{lives}</span>
         </div>
     )
 }
