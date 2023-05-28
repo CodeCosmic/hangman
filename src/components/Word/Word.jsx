@@ -6,11 +6,11 @@ const Word = ({word, guessedLetters}) => {
     const underscoreArray = Array.from(word).map((letter) =>
         guessedLetters.includes(letter) ? letter : "_ "
     )
-
+    console.log(document.querySelectorAll("#letter").innerHTML)
     return (
         <div className="word">
             {underscoreArray.map((letter, index) => (
-                <span key={index}>{letter}</span>
+                <span id="letter" key={index}>{letter}</span>
             ))}
         </div>
     )

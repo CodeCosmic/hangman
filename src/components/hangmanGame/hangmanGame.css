@@ -4,3 +4,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.inputField {
+    width: 50px;
+}
+
+.gameForm {
+    margin-top: 10px;
+}
+
+.notification {
+    color: red;
+}
