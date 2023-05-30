@@ -30,6 +30,8 @@ export const WORDS = [
 "night",
 "satisfying",
 "sulky",
+"burrito",
+"kerfuffle",
 "wrong",
 "obey",
 "mom",

@@ -3,7 +3,7 @@ import './Letters.css'
 const Letters = ({guessedLetters}) => {
     //this is where I'll display the letters that were guessed
     return (
-        <div>
+        <div className='lettersContainer'>
             <div className="letters">
                 <span>Your Guesses</span>
             </div>

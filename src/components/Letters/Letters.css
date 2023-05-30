@@ -1,3 +1,7 @@
+.lettersContainer{
+    border: 2px solid white;
+}
+
 .letters{
     color: white;
     width: 200px;
@@ -6,7 +10,8 @@
 }
 
 .letterBox {
-    border: 2px solid white;
+    padding-top: 10px;
+    border-top: 1px solid white;
     color: white;
     width: auto;
     height: auto;
