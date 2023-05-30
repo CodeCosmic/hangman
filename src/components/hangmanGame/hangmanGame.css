@@ -34,3 +34,21 @@
 .btnContainer {
     text-align: center;
 }
+
+.loseSpan{
+    color: white;
+    text-align: center;
+}
+
+.loseNewGame {
+    text-align: center;
+}
+
+.wordWas{
+    color: red;
+}
+
+.winSpan{
+    color: white;
+    text-align: center;
+}

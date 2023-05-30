@@ -33,7 +33,6 @@ const HangmanGame = () => {
     const handleGuessSubmit = (e) => {
         e.preventDefault()
         const newLetter = document.querySelector("input").value.toLowerCase()
-        console.log(newLetter.length)
         if(newLetter === '' || newLetter.length > 1){
             setNotification("Please enter a single letter")
         } else if (guessedLetters.includes(newLetter)){
@@ -57,22 +56,26 @@ const HangmanGame = () => {
             <Letters guessedLetters={guessedLetters}/>
             {isWin === true ?
                 <div>
-                <span className='winSpan'>You win</span>
+                    <div className='winSpan'>
+                        <span>You win!</span>
+                    </div>
                     <div>
                         <button className='btn' onClick={handleReset}>New Game</button>
                     </div>
                 </div> :
                 lives > 0 ?
                     <form className='gameForm' onSubmit={handleGuessSubmit}>
-                        <input placeholder='Guess Here'className='inputField' id='guessField' type="text"/>
+                        <input placeholder='Guess Here'className='inputField' id='guessField' type="text" autoFocus/>
                         <div className='btnContainer'>
                             <button className='btn' type='submit'>Guess</button>
                         </div>
                     </form> :
             <div>
-                <span className='loseSpan'>You lose</span>
-                <div className='btn'>
-                    <button onClick={handleReset}>New Game</button>
+                <div className='loseSpan'>
+                    <span>You lose!<br/> The word was "<span className='wordWas'>{word}</span>"</span>
+                </div>
+                <div className='loseNewGame'>
+                    <button className='btn' onClick={handleReset}>New Game</button>
                 </div>
             </div>
             }
