@@ -6,13 +6,31 @@
 }
 
 .inputField {
-    width: 50px;
+    width: 100px;
 }
 
 .gameForm {
     margin-top: 10px;
+    color: white;
 }
 
 .notification {
     color: red;
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    border: 2px solid red;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+.btnContainer {
+    text-align: center;
 }
